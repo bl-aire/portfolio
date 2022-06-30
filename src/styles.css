@@ -1,10 +1,15 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import "~font-awesome/css/font-awesome.min.css";
 
+@font-face {
+    font-family: "Raleway";
+    src: local("Raleway"), url(./assets/fonts/Raleway/Raleway-VariableFont_wght.ttf) format("truetype");
+}
+
 html, body { 
     height: 100%; 
     scroll-behavior: smooth;
 }
 body { 
-    margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; 
+    margin: 0; 
 }
