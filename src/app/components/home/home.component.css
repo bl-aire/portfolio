@@ -32,3 +32,15 @@ h2 {
     font-size: 2.8em;
     color:#F88AB0;
 }
+
+@media only screen and (min-width : 992px) {
+    .phrase, .image {
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width : 1200px) {
+    .phrase, .image {
+        margin: auto;
+    }
+}

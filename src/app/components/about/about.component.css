@@ -2,19 +2,31 @@
     justify-content: center;
     display: flex;
     align-items: center;
-    background-color: #7880d6;
-    color: white;
-    padding: 3em 1em 15vh;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 1em 1em 15vh;
+}
+
+img {
+    border-radius: 50%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1em;
 }
 
 h2 {
     font-family: 'Abril Fatface', cursive;
     font-size: 2.8em;
+    color:#F88AB0;
 }
 
 h3 {
     font-family: 'Abril Fatface', cursive;
     font-size: 1.8em;
+    color:#F88AB0;
 }
 
 .about {
@@ -23,3 +35,17 @@ h3 {
     font-size: 1em;
     padding: 0 2em 0;
 }
+
+
+@media only screen and (min-width : 992px) {
+    .me {
+        border-right: 2px solid #F88AB0;
+        padding-right: 3em;
+    }
+
+    .community {
+        padding-left: 3em;
+    }
+}
+
+@media only screen and (min-width : 1200px) {}
