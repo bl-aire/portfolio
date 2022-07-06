@@ -13,6 +13,10 @@ mat-menu button {
   font-family: 'Abril Fatface', cursive;
 }
 
+button.active {
+  color: #F88AB0;
+}
+
 button:hover {
   color:#F88AB0;
 }
