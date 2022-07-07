@@ -14,22 +14,22 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="image col-md-6">
-                <img src="../../../assets/contact.jpg" alt="contact" class="img-fluid">
-            </div>
-            <form action="" #form="ngForm" class="col-md-6 form">
+            
+            <img src="../../../assets/message.png" alt="contact" class="img-fluid image col-md-6 col-lg-6" height="500px">
+            
+            <form action="" #form="ngForm" class="col-md-6 col-lg-6 form">
                 <div class="form-row">
                     <div class="form-group">
                         <!--<label for="name">Enter your name:</label>-->
-                        <input type="text" class="form-control" id="firstname" placeholder="First Name" name="firstname"
+                        <input type="text" class="form-control rounded-pill" id="firstname" placeholder="First Name" name="firstname"
                             ngModel>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" id="lastname" placeholder="Last Name" name="lastname"
+                        <input type="text" class="form-control rounded-pill" id="lastname" placeholder="Last Name" name="lastname"
                             ngModel>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" id="email" placeholder="What's your email?" name="email"
+                        <input type="text" class="form-control rounded-pill" id="email" placeholder="What's your email?" name="email"
                             ngModel>
                     </div>
                     <div class="form-group">
@@ -37,10 +37,9 @@
                             ngModel></textarea>
                     </div>
                     <div>
-                        <button type="submit" class="btn btn-primary" ngModel>Submit</button>
+                        <button type="submit" class="btn btn-primary rounded-pill" ngModel>Submit</button>
+                        {{ form.value | json }}
                     </div>
-
-                    <h4>{{ form.value | json }}</h4>
                 </div>
             </form>
         </div>
