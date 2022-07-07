@@ -1,29 +1,47 @@
 <div class="contact-container">
-    <div>
-        <h2>Got any question or a project I can work on?</h2>
-    </div>
-    <form action="" #form="ngForm">
-        <div class="form-row">
-            <div class="form-group col-md-6">
-                <!--<label for="name">Enter your name:</label>-->
-                <input type="text" class="form-control" id="firstname" placeholder="First Name" name="firstname" ngModel>
-            </div>
-            <div class="form-group col-md-6">
-                <input type="text" class="form-control" id="lastname" placeholder="Last Name" name="lastname" ngModel>
-            </div>
-            <div class="form-group col-md-6">
-                <input type="text" class="form-control" id="email" placeholder="What's your email?" name="email" ngModel>
-            </div>
-            <div class="form-group col-md-6">
-                <textarea name="textarea" id="textarea" cols="25" rows="10" class="form-control" ngModel></textarea>
+    <h3 class="contact-header">Got any question?</h3>
+    <div class="contact-subheader">
+        <div class="contact-details">
+            <div>
+                <span class="details">Phone :</span>
+                <small>O7O8-210-7805</small>
             </div>
             <div>
-                <button type="submit" class="btn btn-primary" ngModel>Submit</button>
+                <span class="details">Email :</span>
+                <small>ogoh_blessing@yahoo.com</small>
             </div>
         </div>
-        <!--<input type="text" name="name" ngModel>
-        <button name="hello" ngModel>Hello</button>-->
-    </form>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="image col-md-6">
+                <img src="../../../assets/contact.jpg" alt="contact" class="img-fluid">
+            </div>
+            <form action="" #form="ngForm" class="col-md-6 form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <!--<label for="name">Enter your name:</label>-->
+                        <input type="text" class="form-control" id="firstname" placeholder="First Name" name="firstname"
+                            ngModel>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="lastname" placeholder="Last Name" name="lastname"
+                            ngModel>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="email" placeholder="What's your email?" name="email"
+                            ngModel>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="textarea" id="textarea" cols="25" rows="4" class="form-control"
+                            ngModel></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-primary" ngModel>Submit</button>
+                    </div>
 
-    <h4>{{ form.value | json }}</h4>
-</div>
+                    <h4>{{ form.value | json }}</h4>
+                </div>
+            </form>
+        </div>
+    </div>
