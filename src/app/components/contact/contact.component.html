@@ -1,3 +1,29 @@
 <div class="contact-container">
-    
+    <div>
+        <h2>Got any question or a project I can work on?</h2>
+    </div>
+    <form action="" #form="ngForm">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <!--<label for="name">Enter your name:</label>-->
+                <input type="text" class="form-control" id="firstname" placeholder="First Name" name="firstname" ngModel>
+            </div>
+            <div class="form-group col-md-6">
+                <input type="text" class="form-control" id="lastname" placeholder="Last Name" name="lastname" ngModel>
+            </div>
+            <div class="form-group col-md-6">
+                <input type="text" class="form-control" id="email" placeholder="What's your email?" name="email" ngModel>
+            </div>
+            <div class="form-group col-md-6">
+                <textarea name="textarea" id="textarea" cols="25" rows="10" class="form-control" ngModel></textarea>
+            </div>
+            <div>
+                <button type="submit" class="btn btn-primary" ngModel>Submit</button>
+            </div>
+        </div>
+        <!--<input type="text" name="name" ngModel>
+        <button name="hello" ngModel>Hello</button>-->
+    </form>
+
+    <h4>{{ form.value | json }}</h4>
 </div>
