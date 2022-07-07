@@ -1,0 +1,6 @@
+export * from './about/index'
+export * from './contact/index'
+export * from './footer/index'
+export * from './header/index'
+export * from './home/index'
+export * from './projects/index'
