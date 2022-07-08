@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Observable, of } from 'rxjs';
 import { Contact } from './contact';
 
 @Injectable({
@@ -8,7 +9,7 @@ export class DataService {
 
   constructor() { }
 
-  postContactForm(Contact: Contact) {
-    
+  postContactForm(contact: Contact) : Observable<Contact> {
+    return of(contact);
   }
 }

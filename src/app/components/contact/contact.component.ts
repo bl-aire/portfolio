@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Contact } from 'src/app/data/contact';
+import { DataService } from 'src/app/data/data.service';
 
 @Component({
   selector: 'app-contact',
@@ -16,14 +17,18 @@ export class ContactComponent implements OnInit {
     message: 'Hi, Bee'
   };
 
-  Contact : Contact = { ...this.originalContact };
+  contact : Contact = { ...this.originalContact };
 
-  constructor() { }
+  constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
   }
 
   onSubmit(form: NgForm) {
     console.log('in onSubmit', form.valid)
+    this.dataService.postContactForm(this.contact).subscribe(
+      result => console.log('success: ', result),
+      error => console.log('error: ',error)
+    )
   }
 }
