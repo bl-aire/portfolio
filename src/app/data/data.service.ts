@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { Contact } from './contact';
@@ -7,9 +8,11 @@ import { Contact } from './contact';
 })
 export class DataService {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
-  postContactForm(contact: Contact) : Observable<Contact> {
-    return of(contact);
+  postContactForm(contact: Contact) : Observable<any> {
+
+    return this.http.post('url', contact);
+    //return of(contact);
   }
 }
