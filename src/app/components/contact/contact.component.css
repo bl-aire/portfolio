@@ -43,6 +43,18 @@ h3 {
     border: 1px solid rgb(138, 138, 126);
 }
 
+.btn {
+    padding: 0.4em 1.5em;
+    border-radius: 0.6em;
+    border: 0;
+    color: rgb(255, 255, 255);
+    background-color: #7880d6;
+}
+
+.btn:hover{
+    background-color: #979ee9;
+}
+
 .small {
     font-size: xx-small;
     color: aliceblue;
