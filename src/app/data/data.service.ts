@@ -12,7 +12,7 @@ export class DataService {
 
   postContactForm(contact: Contact) : Observable<any> {
 
-    return this.http.post('url', contact);
+    return this.http.post('https://putsreq.com/2OYIIEhZBCBuekxXhORK', contact);
     //return of(contact);
   }
 }
