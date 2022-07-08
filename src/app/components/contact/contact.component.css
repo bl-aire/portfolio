@@ -39,13 +39,14 @@ h3 {
     margin:1em 0 0;
 }
 
-.alert {
-    display: inline-block;
+.input-error {
+    border: 1px solid rgb(138, 138, 126);
 }
 
-/*.ng-invalid:not(form).ng-touched {
-    border: 1px solid red;
-}*/
+.small {
+    font-size: xx-small;
+    color: aliceblue;
+}
 
 
 @media only screen and (min-width : 992px) {
