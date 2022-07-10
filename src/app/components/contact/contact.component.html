@@ -47,6 +47,9 @@
                     <div>
                         <button type="submit" class="btn btn-primary rounded-pill" ngModel>Submit</button>
                     </div>
+                    <div [hidden]="!postError" class="alert alert-danger">
+                        {{ postErrorMessage }}
+                    </div>
                 </div>
             </form>
         </div>

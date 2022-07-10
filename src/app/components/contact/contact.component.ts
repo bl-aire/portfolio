@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NgForm } from '@angular/forms';
+import { ControlContainer, NgForm } from '@angular/forms';
 import { Contact } from 'src/app/data/contact';
 import { DataService } from 'src/app/data/data.service';
 
@@ -10,25 +10,40 @@ import { DataService } from 'src/app/data/data.service';
 })
 export class ContactComponent implements OnInit {
 
-  originalContact : Contact = {
+  originalContact: Contact = {
     firstname: 'Blaire',
     lastname: 'Ogoh',
     email: 'ogoh_blessing@yahoo.com',
     message: 'Hi, Bee'
   };
 
-  contact : Contact = { ...this.originalContact };
+  contact: Contact = { ...this.originalContact };
+  postError = false;
+  postErrorMessage = '';
 
   constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
   }
 
+  onHttpError(errorResponse: any) {
+    console.log('error: ', errorResponse);
+    this.postError = true;
+    this.postErrorMessage = errorResponse.error.errorMessage;
+  }
+
   onSubmit(form: NgForm) {
     console.log('in onSubmit', form.valid)
-    this.dataService.postContactForm(this.contact).subscribe(
-      result => console.log('success: ', result),
-      error => console.log('error: ',error)
-    )
+
+    if (form.valid) {
+      this.dataService.postContactForm(this.contact).subscribe(
+        result => console.log('success: ', result),
+        error => this.onHttpError(error)
+      );
+    }
+    else {
+      this.postError = true;
+      this.postErrorMessage = "Bee, fix the error above"
+    }
   }
 }
