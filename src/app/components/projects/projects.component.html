@@ -1,1 +1,21 @@
-<p>projects works!</p>
+<div class="project-container container">
+  <h2>Projects</h2>
+  <div class="row">
+    <mat-card class="mat-card col-md-4 col-lg-4 custom" *ngFor="let project of projects">
+      <mat-card-header>
+        <!--<div mat-card-avatar class="example-header-image"></div>-->
+        <mat-card-title><b>{{project.projectName}}</b></mat-card-title>
+        <mat-card-subtitle>{{ project.projectSubtitle }}</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image [src]="project.projectImage" alt="Photo of a Shiba Inu">
+      <mat-card-content>
+        {{ project.projectDescription }}
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button class="btn btn-primary"><a [href]="project.githubUrl">Source Code</a></button>
+        <button mat-button class="btn btn-primary">Live Demo</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+
+</div>

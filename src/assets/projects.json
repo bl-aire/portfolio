@@ -1,0 +1,26 @@
+[
+    {
+        "projectName": "Personal portfolio",
+        "projectDescription": "I built this project with its goal is to show my skills which I have developed and refined over time. And, showcase projects I have built.",
+        "projectImage": "assets/_home.png",
+        "projectSubtitle": "HTML, CSS, JS, Angular, Angular Material and Bootstrap",
+        "githubUrl": "https://github.com/bl-aire/portfolio",
+        "liveDemo": "www.google.com"
+    },
+    {
+        "projectName": "Oja",
+        "projectDescription": "A shopping app which allows users add, remove, edit and update items in their list. Oja is a Progressive web app. Hence, it is installable and can be used offline.",
+        "projectImage": "assets/_pc-homepage.png",
+        "projectSubtitle": "HTML, CSS and Vanilla JS, IndexedDB and Workbox",
+        "githubUrl": "https://github.com/teamNewDev/ob-shopping-app",
+        "liveDemo": "https://oja.netlify.app"
+    },
+    {
+        "projectName": "Blaire Crafts",
+        "projectDescription": "When I'm not coding, I make miniature art with polymer clay. Blaire's Crafts is my attempt to incorporate my sculpting and coding skills.",
+        "projectImage": "assets/_bc.png",
+        "projectSubtitle": "HTML, CSS, JS, Angular, Angular Material and Bootstrap",
+        "githubUrl": "https://github.com/bl-aire/blaires.crafts",
+        "liveDemo": "www.google.com"
+    }
+]
