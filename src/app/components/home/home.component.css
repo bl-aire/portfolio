@@ -2,6 +2,7 @@
     justify-content:center;
     display:flex;
     align-items: center;
+    font-family: 'Raleway', sans-serif;
 }
 
 .intro {
@@ -12,25 +13,29 @@
     text-align: justify;
     font-size: 1em;
     padding: 0 2em 0;
-    margin-top: 2em; /*look for a way to add for just laptop view*/
+    margin: 2em 0; /*look for a way to add for just laptop view*/
 }
 
 button {
-    padding: 0.7em 1em;
-    border-radius: 1.4em;
+    padding: 0.7em 2em;
+    border-radius: 1.6em;
     border: 0;
-    color: rgb(255, 255, 255);
-    background-color: #7880d6;
+    background-color: #F88AB0;
+    color: white;
 }
 
 button:hover{
-    background-color: #979ee9;
+    background-color: #f39ab9;
 }
 
 h2 {
     font-family: 'Abril Fatface', cursive;
     font-size: 2.8em;
-    color:#F88AB0;
+}
+
+h3 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 1.8em;
 }
 
 @media only screen and (min-width : 992px) {

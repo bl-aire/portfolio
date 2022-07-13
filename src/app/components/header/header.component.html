@@ -1,26 +1,64 @@
-<mat-toolbar color="primary" class="toolbar">
-    <!--<button mat-button routerLink="/homepage" routerLinkActive="active" class="logo"></button>-->
-    <img src="../../../../assets/Logo.svg" height="100px" alt="logo">
+<mat-toolbar class="toolbar" color="primary">
 
-    <!--<button mat-button routerLink="/homepage" routerLinkActive="active"><mat-icon><img src="assets/blaire's craft.png" alt="logo" height="80px"></mat-icon></button>-->
+    <img src="../../../../assets/Logo.svg" height="100px" alt="logo">
 
     <span class="fill-remaining-space"></span>
 
-    <div fxLayout="row" fxShow="false" fxShow.gt-sm>
-        <button mat-button routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Home</button>
-        <button mat-button routerLink="/about" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">About Me</button>
-        <button mat-button routerLink="/projects" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Projects</button>
-        <button mat-button routerLink="/contact" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Contact Me</button>
+    <div fxLayout="row" fxShow="false" fxShow.gt-sm class="header">
+        <button mat-button routerLink="/home" routerLinkActive="active"
+            [routerLinkActiveOptions]="{exact:true}">Home</button>
+        <button mat-button routerLink="/about" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">About
+            Me</button>
+        <button mat-button routerLink="/projects" routerLinkActive="active"
+            [routerLinkActiveOptions]="{exact:true}">Projects</button>
+        <button mat-button routerLink="/contact" routerLinkActive="active"
+            [routerLinkActiveOptions]="{exact:true}">Contact Me</button>
     </div>
+
+
+
+    <div fxLayout="row" fxShow="false" fxShow.gt-sm class="toolbar" color="primary">
+        <ul class="wrapper">
+            <li><a href="https://github.com/bl-aire" target="_blank"><i class="fa fa-github"></i></a></li>
+            <li><a href="https://linkedin.com/in/ogoh-blessing" target="_blank"><i class="fa fa-linkedin"></i></a>
+            </li>
+            <li><a href="https://wa.me/2347082107805" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
+            <li><a href="mailto: ogoh_blessing@yahoo.com?subject = Order = Message" target="_blank"><i
+                        class="fa fa-envelope"></i></a></li>
+            <li><a href="tel:+2347082107805" target="_blank"><i class="fa fa-phone"></i></a></li>
+        </ul>
+    </div>
+
+
     <button mat-button [mat-menu-trigger-for]="menu" fxHide="false" fxHide.gt-sm>
         <mat-icon class="fa fa-bars"></mat-icon>
     </button>
-</mat-toolbar>
-<mat-menu x-position="before" #menu="matMenu">
-    <button mat-menu-item routerLink="/homepage" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Home</button>
-    <button mat-menu-item routerLink="/about" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">About Me</button>
-    <button mat-menu-item routerLink="/projects" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Projects</button>
-    <button mat-menu-item routerLink="/contact" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Contact Me</button>
-</mat-menu>
+    <!--</mat-toolbar>-->
 
+
+    <mat-menu x-position="before" #menu="matMenu">
+        <button mat-menu-item routerLink="/homepage" routerLinkActive="active"
+            [routerLinkActiveOptions]="{exact:true}">Home</button>
+        <button mat-menu-item routerLink="/about" routerLinkActive="active"
+            [routerLinkActiveOptions]="{exact:true}">About Me</button>
+        <button mat-menu-item routerLink="/projects" routerLinkActive="active"
+            [routerLinkActiveOptions]="{exact:true}">Projects</button>
+        <button mat-menu-item routerLink="/contact" routerLinkActive="active"
+            [routerLinkActiveOptions]="{exact:true}">Contact Me</button>
+
+        <span fxLayout="row" fxShow.gt-sm class="toolbar-contact" color="primary" mat-menu-item>
+            <ul class="wrapper">
+                <li><a href="https://github.com/bl-aire" target="_blank"><i class="fa fa-github"></i></a></li>
+                <li><a href="https://linkedin.com/in/ogoh-blessing" target="_blank"><i class="fa fa-linkedin"></i></a>
+                </li>
+                <li><a href="https://wa.me/2347082107805" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
+                <li><a href="mailto: ogoh_blessing@yahoo.com?subject = Order = Message" target="_blank"><i
+                            class="fa fa-envelope"></i></a></li>
+                <li><a href="tel:+2347082107805" target="_blank"><i class="fa fa-phone"></i></a></li>
+            </ul>
+        </span>
+
+    </mat-menu>
+
+</mat-toolbar>
 <router-outlet></router-outlet>

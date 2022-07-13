@@ -1,4 +1,14 @@
-.mat-toolbar.mat-primary {
+footer {
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: #fff;
+    bottom: 0px;
+}
+
+/*.mat-toolbar.mat-primary {
     background: #fff;
     bottom: 0px;
     position:fixed;
@@ -25,4 +35,4 @@ footer .mat-toolbar ul li a {
 
 footer .mat-toolbar ul li a:hover {
     color: #F88AB0;
-}
+}*/

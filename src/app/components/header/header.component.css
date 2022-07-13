@@ -1,12 +1,19 @@
 .fill-remaining-space {
-  flex: 1 1 auto;
+  flex:  1 1 auto;
 }
 
 .mat-toolbar.mat-primary {
-  background: #fff;
-  color: #000;
-  position: relative;
-  height: 10vh;
+  background: white;
+  color: black;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+.header button {
+  font-size: 0.7em ;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
 }
 
 mat-menu button {
@@ -18,9 +25,86 @@ button.active {
 }
 
 button:hover {
-  color:#F88AB0;
+  background-color: white;
+  color: #F88AB0;
 }
 
 .fa-bars {
   font-size: 1.5em;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.mat-toolbar.mat-primary {
+  background: #fff;
+  bottom: 0px;
+  position:fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;*/
+  
+  
+  
+.toolbar-contact ul li {
+  list-style-type: none;
+  padding: 0 1em 0 0;
+}
+
+.toolbar-contact ul li a{
+  color:#000;
+  font-size: 1.15em;
+}
+
+/*.toolbar-contact .wrapper {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}*/
+
+.toolbar ul, .toolbar-contact ul {
+  display: flex;
+}
+
+.toolbar ul li {
+  padding:0 1.3em 0 0;
+  list-style-type: none;
+  font-size: medium;
+}
+
+.toolbar ul li a {
+  color:#000;
+  font-size: 1em;
+}
+
+.toolbar ul li a:hover {
+  color: #F88AB0;
+}
+
+
+
+
+
+
+@media only screen and (min-width : 992px) {
+  mat-toolbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4em;
+  }
+}
+
+
