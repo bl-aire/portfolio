@@ -17,10 +17,11 @@
     align-items: center;
 }
 
+
 h3 {
     font-family: 'Abril Fatface', cursive;
     font-size: 2.8em;
-    color:#F88AB0;
+    color:#000000;
     line-height: 1.03em;
 }
 
@@ -30,10 +31,13 @@ h3 {
 
 .details {
     font-family: 'Abril Fatface', cursive;
-    color:#F88AB0;
     margin-right: 0.2em;
     margin-left: 0.4em;
 }
+
+/*.info {
+    color: #bebbbc;
+}*/
 
 .form-group, .btn {
     margin:1em 0 0;
@@ -43,7 +47,7 @@ h3 {
     border: 1px solid rgb(138, 138, 126);
 }
 
-.btn {
+/*.btn {
     padding: 0.4em 1.5em;
     border-radius: 0.6em;
     color: black;
@@ -54,6 +58,19 @@ h3 {
 
 .btn:hover{
     background-color: #949be7;
+}*/
+
+.btn {
+    padding: 0.7em 2em;
+    border-radius: 1.6em;
+    border: 0;
+    background-color: #F88AB0;
+    color: white;
+    font-size: 1em;
+}
+
+.btn:hover{
+    background-color: #f8acc7;
 }
 
 .small {
@@ -63,6 +80,11 @@ h3 {
 
 
 @media only screen and (min-width : 992px) {
+
+    .contact-container{
+        padding: 0 0 4em;
+    }
+
     img{
         margin: 0 auto;
         padding: 0 5em;

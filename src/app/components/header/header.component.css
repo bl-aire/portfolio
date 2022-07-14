@@ -10,6 +10,10 @@
   z-index: 99;
 }
 
+/*.mat-toolbar {
+  padding-top: 1em;
+}*/
+
 .header button {
   font-size: 0.7em ;
   font-family: 'Raleway', sans-serif;
@@ -98,13 +102,19 @@ button:hover {
 
 
 @media only screen and (min-width : 992px) {
-  mat-toolbar {
+  mat-toolbar{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 4em;
+    padding-top: 1em;
+    height: 25vh;
   }
+
 }
 
+
+@media only screen and (min-width : 1200px) {
+  
+}
 
