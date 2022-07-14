@@ -5,6 +5,10 @@
   padding: 1em 1em;
 }*/
 
+.project-container {
+  padding-top: 2em;
+}
+
 .row, .mat-card-actions {
   justify-content: center;
   display: flex;
@@ -38,18 +42,16 @@ h2 {
 .btn a {
   color: rgb(0, 0, 0);
   text-decoration: none;
+  font-size:0.9em;
 }
 
-.btn:hover{
-  border-bottom: 1px solid black;
-  background-color: #ffffff;
+.btn a:hover{
+  background-color: #d13c3c;
+  color: #ffffff;
+  padding: 0.5em 0.8em;
+  border-radius: 0.9em;
+
 }
-  
-/*.example-header-image {
-  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-  background-size: cover;
-}*/
-  
 
 
 

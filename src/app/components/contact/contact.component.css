@@ -64,13 +64,13 @@ h3 {
     padding: 0.7em 2em;
     border-radius: 1.6em;
     border: 0;
-    background-color: #F88AB0;
+    background-color: #d13c3c;
     color: white;
     font-size: 1em;
 }
 
 .btn:hover{
-    background-color: #f8acc7;
+    background-color: #e95e5e;
 }
 
 .small {
@@ -82,12 +82,16 @@ h3 {
 @media only screen and (min-width : 992px) {
 
     .contact-container{
-        padding: 0 0 4em;
+        padding: 2em 4em;
     }
 
     img{
         margin: 0 auto;
         padding: 0 5em;
+    }
+
+    .svg-form {
+        padding: 2em 0 3em;
     }
 
     .form {

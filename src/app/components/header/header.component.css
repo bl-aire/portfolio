@@ -25,12 +25,12 @@ mat-menu button {
 }
 
 button.active {
-  color: #F88AB0;
+  color: #d13c3c;
 }
 
 button:hover {
   background-color: white;
-  color: #F88AB0;
+  color: #e95e5e;
 }
 
 .fa-bars {
@@ -71,6 +71,10 @@ button:hover {
   font-size: 1.15em;
 }
 
+.toolbar-contact ul li a:hover {
+  color: #e95e5e;
+}
+
 /*.toolbar-contact .wrapper {
   align-items: center;
   justify-content: center;
@@ -93,7 +97,7 @@ button:hover {
 }
 
 .toolbar ul li a:hover {
-  color: #F88AB0;
+  color: #e95e5e;
 }
 
 

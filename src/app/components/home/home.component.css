@@ -20,12 +20,12 @@ button {
     padding: 0.7em 2em;
     border-radius: 1.6em;
     border: 0;
-    background-color: #F88AB0;
+    background-color: #d13c3c;
     color: white;
 }
 
 button:hover{
-    background-color: #f8acc7;
+    background-color: #e95e5e;
 }
 
 h2 {
