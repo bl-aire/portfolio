@@ -21,7 +21,6 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSidenavModule } from '@angular/material/sidenav'
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
@@ -51,7 +50,6 @@ import { HttpClientModule } from '@angular/common/http';
     FlexLayoutModule,
     FormsModule,
     ReactiveFormsModule,
-    NgxPageScrollCoreModule,
     HttpClientModule
   ],
   providers: [],
