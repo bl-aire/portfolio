@@ -27,9 +27,6 @@ h3 {
     line-height: 1.03em;
 }
 
-.contact-details {
-    display: flex;
-}
 
 .details {
     font-family: 'Abril Fatface', cursive;
@@ -80,11 +77,19 @@ h3 {
     color: aliceblue;
 }
 
+.image {
+    height: 330px;
+}
+
 
 @media only screen and (min-width : 992px) {
 
     .contact-container{
         padding: 2em 4em;
+    }
+
+    .contact-details {
+        display: flex;
     }
 
     img{

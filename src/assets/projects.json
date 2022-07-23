@@ -1,7 +1,7 @@
 [
     {
         "projectName": "Personal portfolio",
-        "projectDescription": "I built this project with its goal is to show my skills which I have developed and refined over time. And, showcase projects I have built.",
+        "projectDescription": "I built this project with its goal being to show my skills which I have developed and refined over time. And, showcase projects I have built.",
         "projectImage": "assets/_portfolio.png",
         "projectSubtitle": "HTML, CSS, JS, Angular, Angular Material and Bootstrap",
         "githubUrl": "https://github.com/bl-aire/portfolio",
@@ -13,7 +13,7 @@
         "projectImage": "assets/_bc.png",
         "projectSubtitle": "HTML, CSS, JS, Angular, Angular Material and Bootstrap",
         "githubUrl": "https://github.com/bl-aire/blaires.crafts",
-        "liveDemo": ""
+        "liveDemo": "https://blaires-crafts.vercel.app"
     },
     {
         "projectName": "Dasdas",
