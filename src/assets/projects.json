@@ -2,18 +2,10 @@
     {
         "projectName": "Personal portfolio",
         "projectDescription": "I built this project with its goal is to show my skills which I have developed and refined over time. And, showcase projects I have built.",
-        "projectImage": "assets/_home.png",
+        "projectImage": "assets/_portfolio.png",
         "projectSubtitle": "HTML, CSS, JS, Angular, Angular Material and Bootstrap",
         "githubUrl": "https://github.com/bl-aire/portfolio",
-        "liveDemo": "www.google.com"
-    },
-    {
-        "projectName": "Oja",
-        "projectDescription": "A shopping app which allows users add, remove, edit and update items in their list. Oja is a Progressive web app. Hence, it is installable and can be used offline.",
-        "projectImage": "assets/_pc-homepage.png",
-        "projectSubtitle": "HTML, CSS and Vanilla JS, IndexedDB and Workbox",
-        "githubUrl": "https://github.com/teamNewDev/ob-shopping-app",
-        "liveDemo": "https://oja.netlify.app"
+        "liveDemo": "https://blaire.vercel.app"
     },
     {
         "projectName": "Blaire Crafts",
@@ -21,6 +13,22 @@
         "projectImage": "assets/_bc.png",
         "projectSubtitle": "HTML, CSS, JS, Angular, Angular Material and Bootstrap",
         "githubUrl": "https://github.com/bl-aire/blaires.crafts",
-        "liveDemo": "www.google.com"
+        "liveDemo": ""
+    },
+    {
+        "projectName": "Dasdas",
+        "projectDescription": "Dasdas is a responsive SPA. Its content is created with data fetched from Techcrunch's API and @angular/universal is used to improve page load performance.",
+        "projectImage": "assets/dasdas.png",
+        "projectSubtitle": "HTML, CSS, JS and Angular",
+        "githubUrl": "https://github.com/bl-aire/flutterwave-assessment",
+        "liveDemo": "https://fw-task.vercel.app"
+    },
+    {
+        "projectName": "Oja",
+        "projectDescription": "A shopping app which allows users add, remove, edit and update items in their list. Oja is a Progressive web app. Hence, it is installable and can be used offline.",
+        "projectImage": "assets/_pc-homepage.png",
+        "projectSubtitle": "HTML, CSS and Vanilla JS, IndexedDB and Workbox",
+        "githubUrl": "https://github.com/teamNewDev/ob-shopping-app",
+        "liveDemo": "https://62645b8eedbd57780bea1458--oja.netlify.app/"
     }
 ]
