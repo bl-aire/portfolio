@@ -11,8 +11,7 @@ import { DataService } from 'src/app/data/data.service';
 export class ContactComponent implements OnInit {
 
   originalContact: Contact = {
-    firstname: '',
-    lastname: '',
+    fullname: '',
     email: '',
     message: ''
   };
@@ -28,11 +27,18 @@ export class ContactComponent implements OnInit {
   }
   ngOnInit(): void {
       this.FormData = this.builder.group({
-        Firstname: new FormControl('', [Validators.required]),
-        Lastname: new FormControl('', [Validators.required]),
+        Fullname: new FormControl('', [Validators.required]),
         Email: new FormControl('', [Validators.required]),//[Validators.compose([Validators.required, Validators.email])]),
         Message: new FormControl('', [Validators.required])
       })
+  }
+
+  get Fullname() {
+    return this.FormData.get('Fullname');
+  }
+
+  get Email() {
+    return this.FormData.get('Email');
   }
 
 
