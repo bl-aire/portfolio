@@ -11,10 +11,10 @@ import { DataService } from 'src/app/data/data.service';
 export class ContactComponent implements OnInit {
 
   originalContact: Contact = {
-    firstname: 'Blaire',
-    lastname: 'Ogoh',
-    email: 'ogoh_blessing@yahoo.com',
-    message: 'Hi, Bee'
+    firstname: '',
+    lastname: '',
+    email: '',
+    message: ''
   };
 
   contact: Contact = { ...this.originalContact };

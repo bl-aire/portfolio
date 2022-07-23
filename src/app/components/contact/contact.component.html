@@ -17,7 +17,7 @@
             
             <img src="../../../assets/vecteezy_mail-service-concept-with-computer-laptop-illustration_7495989-removebg-preview.png" alt="contact" class="img-fluid image col-md-6 col-lg-6" height="500px">
             
-            <form #form="ngForm" class="col-md-6 col-lg-6 form" (ngSubmit)="onSubmit(form)">
+            <form #form="ngForm" class="col-md-6 col-lg-6 form" (ngSubmit)="onSubmit(form)" action="https://formsubmit.co/ogoh_blessing@email.com" method="POST">
                 <div class="form-row">
                     <div class="form-group">
                         <input type="text" class="form-control rounded-pill" id="firstname" placeholder="First Name" required name="nameField" [(ngModel)]="contact.firstname" #nameField="ngModel" [class.input-error]="form.submitted && nameField.invalid">
