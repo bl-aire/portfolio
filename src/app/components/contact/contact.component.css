@@ -16,6 +16,9 @@
     align-items: center;
 }
 
+.alert {
+    color: #ff0000;
+}
 
 h3 {
     font-family: 'Abril Fatface', cursive;

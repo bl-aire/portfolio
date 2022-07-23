@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ControlContainer, NgForm } from '@angular/forms';
+import { ControlContainer, NgForm, FormBuilder, FormGroup, FormControl, Validators } from '@angular/forms';
 import { Contact } from 'src/app/data/contact';
 import { DataService } from 'src/app/data/data.service';
 
@@ -21,29 +21,36 @@ export class ContactComponent implements OnInit {
   postError = false;
   postErrorMessage = '';
 
-  constructor(private dataService: DataService) { }
+  FormData!: FormGroup;
 
+  constructor(private dataService: DataService, private builder: FormBuilder) { 
+    
+  }
   ngOnInit(): void {
+      this.FormData = this.builder.group({
+        Firstname: new FormControl('', [Validators.required]),
+        Lastname: new FormControl('', [Validators.required]),
+        Email: new FormControl('', [Validators.required]),//[Validators.compose([Validators.required, Validators.email])]),
+        Message: new FormControl('', [Validators.required])
+      })
   }
 
-  onHttpError(errorResponse: any) {
+
+  onHttpError(errorResponse: any): void {
     console.log('error: ', errorResponse);
     this.postError = true;
     this.postErrorMessage = errorResponse.error.errorMessage;
   }
 
-  onSubmit(form: NgForm) {
-    console.log('in onSubmit', form.valid)
-
-    if (form.valid) {
-      this.dataService.postContactForm(this.contact).subscribe(
-        result => console.log('success: ', result),
-        error => this.onHttpError(error)
-      );
-    }
-    else {
-      this.postError = true;
-      this.postErrorMessage = "404 challenge"
-    }
+  onSubmit(FormData: any) {
+    console.log(FormData)
+    this.dataService.postContactForm(FormData).subscribe(
+    response => {
+      location.href = 'https://mailthis.to/confirm'
+      console.log(response)
+    }, error => {
+      console.warn(error.responseText)
+      console.log({ error })
+    })
   }
 }
