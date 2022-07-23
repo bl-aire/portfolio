@@ -43,7 +43,7 @@ export class ContactComponent implements OnInit {
     }
     else {
       this.postError = true;
-      this.postErrorMessage = "Bee, fix the error above"
+      this.postErrorMessage = "404 challenge"
     }
   }
 }
