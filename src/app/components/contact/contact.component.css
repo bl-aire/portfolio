@@ -34,10 +34,6 @@ h3 {
     margin-left: 0.4em;
 }
 
-/*.info {
-    color: #bebbbc;
-}*/
-
 .form-group, .btn {
     margin:1em 0 0;
 }
@@ -45,19 +41,6 @@ h3 {
 .input-error {
     border: 1px solid rgb(138, 138, 126);
 }
-
-/*.btn {
-    padding: 0.4em 1.5em;
-    border-radius: 0.6em;
-    color: black;
-    background-color: #7880d6;
-    border: 0;
-    color: white;
-}
-
-.btn:hover{
-    background-color: #949be7;
-}*/
 
 .btn {
     padding: 0.7em 2em;

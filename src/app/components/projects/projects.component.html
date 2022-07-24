@@ -7,13 +7,13 @@
         <mat-card-title><b>{{project.projectName}}</b></mat-card-title>
         <mat-card-subtitle>{{ project.projectSubtitle }}</mat-card-subtitle>
       </mat-card-header>
-      <img mat-card-image [src]="project.projectImage" alt="Photo of a Shiba Inu">
+      <img mat-card-image [src]="project.projectImage" alt="project landing page">
       <mat-card-content>
         {{ project.projectDescription }}
       </mat-card-content>
       <mat-card-actions>
         <button  class="btn btn-primary"><a [href]="project.githubUrl" target="_blank">Source Code</a></button>
-        <button class="btn btn-primary"><a [href]="">Live Demo</a></button>
+        <button class="btn btn-primary"><a [href]="project.liveDemo" target="_blank">Live Demo</a></button>
       </mat-card-actions>
     </mat-card>
   </div>
