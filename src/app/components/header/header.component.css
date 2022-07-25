@@ -10,10 +10,6 @@
   z-index: 99;
 }
 
-/*.mat-toolbar {
-  padding-top: 1em;
-}*/
-
 .header button {
   font-size: 0.7em ;
   font-family: 'Raleway', sans-serif;
@@ -38,29 +34,6 @@ button:hover {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-/*.mat-toolbar.mat-primary {
-  background: #fff;
-  bottom: 0px;
-  position:fixed;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;*/
-  
-  
-  
 .toolbar-contact ul li {
   list-style-type: none;
   padding: 0 1em 0 0;
@@ -75,11 +48,6 @@ button:hover {
   color: #e95e5e;
 }
 
-/*.toolbar-contact .wrapper {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-}*/
 
 .toolbar ul, .toolbar-contact ul {
   display: flex;
@@ -99,9 +67,6 @@ button:hover {
 .toolbar ul li a:hover {
   color: #e95e5e;
 }
-
-
-
 
 
 

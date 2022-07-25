@@ -20,7 +20,7 @@
     color: #ff0000;
 }
 
-h3 {
+h4 {
     font-family: 'Abril Fatface', cursive;
     font-size: 2.8em;
     color:#d13c3c;
@@ -63,22 +63,24 @@ h3 {
 
 .image {
     height: 310px;
+    border-radius: 3em;
+    margin-top: 1em;
 }
 
 
 @media only screen and (min-width : 992px) {
 
     .contact-container{
-        padding: 2em 4em;
+        padding: 1em 4em;
     }
 
     .contact-details {
         display: flex;
     }
 
-    img{
+    image{
         margin: 0 auto;
-        padding: 0 5em;
+        border-radius: 3em;
     }
 
     .svg-form {

@@ -2,6 +2,7 @@
     justify-content: center;
     display: flex;
     align-items: center;
+    padding-top: 2em;
     /*: 1em 1em 3em;*/
 }
 
@@ -13,6 +14,7 @@ a {
     text-decoration: none;
     font-size: 1.1em;
     color: #000000;
+    text-decoration: underline;
 }
 
 h2 {
