@@ -12,8 +12,7 @@
 .phrase {
     text-align: justify;
     font-size: 1em;
-    padding: 0 2em 0;
-    margin: 2em 0; /*look for a way to add for just laptop view*/
+    margin: 2em 0; 
 }
 
 button {

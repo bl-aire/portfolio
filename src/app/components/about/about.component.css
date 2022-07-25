@@ -2,9 +2,7 @@
     justify-content: center;
     display: flex;
     align-items: center;
-    background-color: #d13c3c;
-    color: white;
-    padding: 1em 1em 3em;
+    /*: 1em 1em 3em;*/
 }
 
 img {
@@ -13,39 +11,33 @@ img {
 
 a {
     text-decoration: none;
-    color: white;
     font-size: 1.1em;
+    color: #000000;
 }
 
 h2 {
     font-family: 'Abril Fatface', cursive;
     font-size: 2.5em;
-    color:#ffffff;
+    color:#d13c3c;
 }
 
 h3 {
     font-family: 'Abril Fatface', cursive;
     font-size: 1.8em;
-    color:#ffffff;
+    color:#d13c3c;
 }
 
 .about {
     font-family: 'Raleway', sans-serif;
     text-align: justify;
     font-size: 1em;
-    padding: 0 2em 0;
 }
 
 
 @media only screen and (min-width : 992px) {
 
-    .about-container {
-        padding-top: 2em;
-        padding-bottom: 4em;
-    }
-
     .me {
-        border-right: 2px solid #ffffff;
+        border-right: 2px solid #d13c3c;
         padding-right: 3em;
     }
 
