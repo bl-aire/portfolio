@@ -15,12 +15,13 @@
     <div class="container svg-form">
         <div class="row">
             
-            <img src="../../../assets/chat.jpg" alt="contact" class="img-fluid image col-md-6 col-lg-6">
+            <img src="../../../assets/chat.jpg" alt="A group of people chatting" class="img-fluid image col-md-6 col-lg-6">
             
             <form #form="ngForm" class="col-md-6 col-lg-6 form" [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)" action="https://formsubmit.co/ogoh_blessing@email.com" method="POST">
                 <div class="form-row">
                     <div class="form-group">
-                        <input type="text" class="form-control rounded-pill" id="fullname" placeholder="Fullname" required name="Fullname" formControlName="Fullname">
+                        <label for="fullname">Fullname</label>
+                        <input type="text" class="form-control rounded-pill" id="fullname" required name="Fullname" formControlName="Fullname">
                         <div *ngIf="FormData.controls['Fullname'].invalid && FormData.controls['Fullname'].touched">
                             <small class="alert"> <!-- *ngIf="FormData.controls['Fullname'].errors.required"-->
                                 Fullname is required
@@ -35,7 +36,8 @@
                         </small>
                     </div>-->
                     <div class="form-group">
-                        <input type="email" class="form-control rounded-pill" id="email" placeholder="What's your email?" required name="Email" formControlName="Email">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control rounded-pill" id="email" required name="Email" formControlName="Email">
                         <div *ngIf="FormData.controls['Email'].invalid && FormData.controls['Email'].touched">
                             <small class="alert"> <!-- *ngIf="FormData.controls['Fullname'].errors.required"-->
                                 Email is required
@@ -43,7 +45,8 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <textarea placeholder="Message" id="textarea" cols="25" rows="4" class="form-control" required name="Message" formControlName="Message"></textarea>
+                        <label for="textarea">Message:</label>
+                        <textarea id="textarea" cols="25" rows="4" class="form-control" required name="Message" formControlName="Message"></textarea>
                     </div>
                     <div>
                         <button type="submit" class="btn btn-primary rounded-pill">Submit</button>
