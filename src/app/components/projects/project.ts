@@ -4,4 +4,5 @@ export interface Project {
     projectImage: any;
     githubUrl: any;
     liveDemo: string;
+    altText: string;
 }

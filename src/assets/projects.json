@@ -5,7 +5,8 @@
         "projectImage": "assets/_portfolio.png",
         "projectSubtitle": "HTML, CSS, JS, Angular, Angular Material and Bootstrap",
         "githubUrl": "https://github.com/bl-aire/portfolio",
-        "liveDemo": "https://blaire.vercel.app"
+        "liveDemo": "https://blaire.vercel.app",
+        "altText": "Personal portfolio landing page"
     },
     {
         "projectName": "Blaire Crafts",
@@ -13,7 +14,8 @@
         "projectImage": "assets/_bc.png",
         "projectSubtitle": "HTML, CSS, JS, Angular, Angular Material and Bootstrap",
         "githubUrl": "https://github.com/bl-aire/blaires.crafts",
-        "liveDemo": "https://blaires-crafts.vercel.app"
+        "liveDemo": "https://blaires-crafts.vercel.app",
+        "altText": "Blaire Crafts landing page"
     },
     {
         "projectName": "Dasdas",
@@ -21,7 +23,8 @@
         "projectImage": "assets/dasdas.png",
         "projectSubtitle": "HTML, CSS, JS and Angular",
         "githubUrl": "https://github.com/bl-aire/flutterwave-assessment",
-        "liveDemo": "https://fw-task.vercel.app"
+        "liveDemo": "https://fw-task.vercel.app",
+        "altText": "Dasdas landing page"
     },
     {
         "projectName": "Oja",
@@ -29,6 +32,7 @@
         "projectImage": "assets/_pc-homepage.png",
         "projectSubtitle": "HTML, CSS and Vanilla JS, IndexedDB and Workbox",
         "githubUrl": "https://github.com/teamNewDev/ob-shopping-app",
-        "liveDemo": "https://62645b8eedbd57780bea1458--oja.netlify.app/"
+        "liveDemo": "https://62645b8eedbd57780bea1458--oja.netlify.app/",
+        "altText": "Oja landing page"
     }
 ]
