@@ -18,6 +18,15 @@
         "altText": "Blaire Crafts landing page"
     },
     {
+        "projectName": "Artsy",
+        "projectDescription": "Artsy is a pet project I am building to hone my Frontend development skills.",
+        "projectImage": "assets/artsy.png",
+        "projectSubtitle": "HTML, CSS, JS and Bootstrap",
+        "githubUrl": "https://github.com/bl-aire/Artsy",
+        "liveDemo": "https://artsy-three.vercel.app",
+        "altText": "Artsy landing page"
+    },
+    {
         "projectName": "Dasdas",
         "projectDescription": "Dasdas is a responsive SPA. Its content is created with data fetched from Techcrunch's API and @angular/universal is used to improve page load performance.",
         "projectImage": "assets/dasdas.png",
