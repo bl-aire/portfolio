@@ -27,6 +27,15 @@
         "altText": "Artsy landing page"
     },
     {
+        "projectName": "Saint Margrethen",
+        "projectDescription": "Saint Margrethen is a responsive and accessible static landing page built with HTML, CSS and JavaScript.",
+        "projectImage": "assets/saint.png",
+        "projectSubtitle": "HTML, CSS, JS and Material design lite",
+        "githubUrl": "https://github.com/bl-aire/St.M",
+        "liveDemo": "https://margrethen.vercel.app",
+        "altText": "Saint Margrethen landing page"
+    },
+    {
         "projectName": "Dasdas",
         "projectDescription": "Dasdas is a responsive SPA. Its content is created with data fetched from Techcrunch's API and @angular/universal is used to improve page load performance.",
         "projectImage": "assets/dasdas.png",
