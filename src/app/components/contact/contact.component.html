@@ -23,23 +23,18 @@
                         <label for="fullname">Fullname</label>
                         <input type="text" class="form-control rounded-pill" id="fullname" required name="Fullname" formControlName="Fullname">
                         <div *ngIf="FormData.controls['Fullname'].invalid && FormData.controls['Fullname'].touched">
-                            <small class="alert"> <!-- *ngIf="FormData.controls['Fullname'].errors.required"-->
+                            <small class="alert"> 
                                 Fullname is required
                             </small>
                         </div>
                         
                     </div>
-                    <!--<div class="form-group">
-                        <input type="text" class="form-control rounded-pill" id="lastname" placeholder="Last Name" required name="Lastname" formControlName="Lastname">
-                        <small class="alert">
-                            Lastname is required
-                        </small>
-                    </div>-->
+                    
                     <div class="form-group">
                         <label for="email">Email:</label>
                         <input type="email" class="form-control rounded-pill" id="email" required name="Email" formControlName="Email">
                         <div *ngIf="FormData.controls['Email'].invalid && FormData.controls['Email'].touched">
-                            <small class="alert"> <!-- *ngIf="FormData.controls['Fullname'].errors.required"-->
+                            <small class="alert">
                                 Email is required
                             </small>
                         </div>
