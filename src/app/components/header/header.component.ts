@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -8,18 +7,9 @@ import { Renderer2 } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor(private renderer: Renderer2) { }
+  constructor() { }
 
   ngOnInit(): void {
-  }
-
-  downloadResume(){
-    const link = this.renderer.createElement('a');
-    link.setAttribute('target', '_blank');
-    link.setAttribute('href', '../../../assets/OGOH_BLESSING.pdf');
-    link.setAttribute('download', `BLESSING_OGOH.PDF`);
-    link.click();
-    link.remove();
   }
 
 }
