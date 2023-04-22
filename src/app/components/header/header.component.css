@@ -16,6 +16,10 @@
   font-weight: bold;
 }
 
+#cv {
+  font-weight: bold;
+}
+
 mat-menu button {
   font-family: 'Abril Fatface', cursive;
 }
