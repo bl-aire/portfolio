@@ -10,13 +10,9 @@
   z-index: 99;
 }
 
-.header button {
+.header button, #cv {
   font-size: 0.7em ;
   font-family: 'Raleway', sans-serif;
-  font-weight: bold;
-}
-
-#cv {
   font-weight: bold;
 }
 
