@@ -24,7 +24,7 @@ button.active {
   color: #d13c3c;
 }
 
-button:hover {
+button:hover, #cv:hover {
   background-color: white;
   color: #e95e5e;
 }
@@ -64,7 +64,7 @@ button:hover {
   font-size: 1em;
 }
 
-.toolbar ul li a:hover {
+.toolbar ul li a:hover, .resume:hover {
   color: #e95e5e;
 }
 
