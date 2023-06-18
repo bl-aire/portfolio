@@ -30,7 +30,8 @@ button:hover{
 
 h2 {
     font-family: 'Abril Fatface', cursive;
-    font-size: 2.8em;
+    font-size: 2.6em;
+    padding: 0.1em 0;
 }
 
 h1 {
