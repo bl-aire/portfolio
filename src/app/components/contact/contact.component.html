@@ -20,7 +20,7 @@
             <form #form="ngForm" class="col-md-6 col-lg-6 form" [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)" action="https://formsubmit.co/ogoh_blessing@email.com" method="POST">
                 <div class="form-row">
                     <div class="form-group">
-                        <label for="fullname">Fullname</label>
+                        <label for="fullname">Fullname:</label>
                         <input type="text" class="form-control rounded-pill" id="fullname" required name="Fullname" formControlName="Fullname">
                         <div *ngIf="FormData.controls['Fullname'].invalid && FormData.controls['Fullname'].touched">
                             <small class="alert"> 

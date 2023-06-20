@@ -14,6 +14,7 @@
     justify-content:center;
     display:flex;
     align-items: center;
+    margin: 0 0 0.5em;
 }
 
 .alert {
@@ -50,6 +51,7 @@ h1 {
     background-color: #d13c3c;
     color: white;
     font-size: 1em;
+    margin: 1.5em 0;
 }
 
 .btn:hover{
@@ -64,7 +66,7 @@ h1 {
 .image {
     height: 310px;
     border-radius: 3em;
-    margin-top: 1em;
+    margin: auto;
 }
 
 
