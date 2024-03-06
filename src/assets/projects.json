@@ -36,17 +36,8 @@
         "altText": "Saint Margrethen landing page"
     },
     {
-        "projectName": "Dasdas",
-        "projectDescription": "Dasdas is a responsive SPA. Its content is created with data fetched from Techcrunch's API and @angular/universal is used to improve page load performance.",
-        "projectImage": "assets/dasdas.png",
-        "projectSubtitle": "HTML, CSS, JS and Angular",
-        "githubUrl": "https://github.com/bl-aire/flutterwave-assessment",
-        "liveDemo": "https://fw-task.vercel.app",
-        "altText": "Dasdas landing page"
-    },
-    {
         "projectName": "Oja",
-        "projectDescription": "A shopping app which allows users add, remove, edit and update items in their list. Oja is a Progressive web app. Hence, it is installable and can be used offline.",
+        "projectDescription": "A shopping app which allows users add, remove, edit and update items in their list. Oja is a PWA. Hence, it is installable and can be used offline.",
         "projectImage": "assets/_pc-homepage.png",
         "projectSubtitle": "HTML, CSS and Vanilla JS, IndexedDB and Workbox",
         "githubUrl": "https://github.com/teamNewDev/ob-shopping-app",
